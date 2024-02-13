@@ -10,15 +10,84 @@
     <!-- custom css  -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <section class="home">
-
-    </section>
-    <section class="play-ground">
-
-    </section>
-    <section class="score">
+<body class="font-poppins">
+    <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!-- home screen  -->
+        <section class="home text-white flex flex-col items-center justify-center text-center min-h-screen hidden ">
+           <div class="space-y-6">
+                <h1 class="text-9xl  font-anton uppercase">Alpha Clash Pro</h1>
+                <p class="text-xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                 <button class="btn bg-white text-black">Play Now</button>
+           </div>
+        </section>
+        <!-- play-ground start  -->
+        <section class="play-ground">
+            <div class="flex flex-col justify-center items-center gap-10 pt-6">
+                <!-- screen  --> 
+                <div class="artboard border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] artboard-horizontal w-full phone-6">
+                    <div class="flex justify-center">
+                        <p class="bg-[#2F2941] text-white px-6 pb-2 rounded-b-xl">Don't watch keyboard while playing...</p>
+                    </div>
+                    <div class="flex justify-center items-center h-full">
+                        <p class="text-black text-8xl font-semibold">Y</p>
+                    </div>
+                </div>
+                <!-- keyboard start -->
+                <div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">q</kbd>
+                        <kbd class="kbd">w</kbd>
+                        <kbd class="kbd">e</kbd>
+                        <kbd class="kbd">r</kbd>
+                        <kbd class="kbd">t</kbd>
+                        <kbd class="kbd">y</kbd>
+                        <kbd class="kbd">u</kbd>
+                        <kbd class="kbd">i</kbd>
+                        <kbd class="kbd">o</kbd>
+                        <kbd class="kbd">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">a</kbd>
+                        <kbd class="kbd">s</kbd>
+                        <kbd class="kbd">d</kbd>
+                        <kbd class="kbd">f</kbd>
+                        <kbd class="kbd">g</kbd>
+                        <kbd class="kbd">h</kbd>
+                        <kbd class="kbd">j</kbd>
+                        <kbd class="kbd">k</kbd>
+                        <kbd class="kbd">l</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                    </div>
+                </div>
+                <!-- keyboard end -->
+                <!-- life score  -->
+                <div class="flex justify-between w-10/12">
+                    <button class="btn bg-[#894189] border-none text-white rounded-full px-4 py-2">
+                        Life
+                        <img src="./images/heart.svg" alt="">
+                        <span>1</span>
+                    </button>
+                    <button class="btn bg-[#894189] border-none text-white rounded-full px-4 py-2">
+                        Score
+                        <img src="./images/doller.svg" alt="">
+                        <span>1</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- play-ground end  -->
+        <section class="score">
         
-    </section>
+        </section>
+    </main>
 </body>
 </html>
