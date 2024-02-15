@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Clash Pro</title>
+    <title>Alpha Clash Pro max</title>
     <!-- daisy ui and tailwind CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,13 +13,13 @@
 <body class="font-poppins">
     <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
         <!-- home screen  -->
-        <section id="home-screen" class="home text-white flex flex-col items-center justify-center text-center min-h-screen ">
+        <div id="home-screen" tabindex="1" class="home text-white flex flex-col items-center justify-center text-center min-h-screen ">
            <div class="space-y-6">
                 <h1 class="text-9xl  font-anton uppercase">Alpha Clash Pro</h1>
                 <p class="text-xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                 <button onclick="play()" class="btn bg-white text-black">Play Now</button>
+                 <button id="play-btn" onclick="play(event)" class="btn bg-white text-black">Play Now</button>
            </div>
-        </section>
+        </div>
         <!-- play-ground start  -->
         <section id="play-ground" class="play-ground hidden">
             <div class="flex flex-col justify-center items-center gap-10 pt-6">
@@ -100,6 +100,7 @@
             </div>
         </section>
     </main>
+
     <script src="./scripts/utiliti.js"></script>
     <script src="scripts/alpha-clash.js"></script>
 </body>

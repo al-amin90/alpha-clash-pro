@@ -1,39 +1,40 @@
-function hideElementById(elementId) {
-    document.getElementById(elementId).classList.add("hidden");
+function hideElementByID(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add("hidden");
 }
 
-function showElementById(elementId) {
-    document.getElementById(elementId).classList.toggle("hidden");
+function showElementByID(elementId) {
+    document.getElementById(elementId).classList.remove("hidden");
 }
 
-function getARandomAlphabet() {
+function getRandomAlphabet() {
     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
     const alphabets = alphabetString.split("");
-    const alphabet = alphabets[Math.floor(Math.random() * alphabets.length)];
-    return alphabet;
+    const randomAlphabet = alphabets[Math.floor(Math.random()*alphabets.length)]
+    return randomAlphabet;
 }
 
-function setBackgroundColorById(elementId) {
-    const element = document.getElementById(elementId);
-    element.classList.add("bg-[#FFA500]");
-}
-
-function removeBackgroundColorById(elementId) {
-    const element = document.getElementById(elementId);
-    element.classList.remove("bg-[#FFA500]");
-}
-
-function getTextElementValueById(elementId) {
-    const elementValue = document.getElementById(elementId).innerText;
-    return parseInt(elementValue);
-}
-
-function getTextElementById(elementId) {
-    const element = document.getElementById(elementId);
+function getElementTextById(elementId) {
+    const element = document.getElementById(elementId)
     return element.innerText;
 }
 
-function setTextElementValueById(elementId, value) {
+function getElementTextValueById(elementId) {
+    const element = document.getElementById(elementId);
+    const value = parseInt(element.innerText);
+    return value;
+}
+
+function setElementTextByValue(elementId, value) {
     const element = document.getElementById(elementId);
     element.innerText = value;
+}
+
+function showBgColorById(elementId, value) {
+    const element = document.getElementById(elementId);
+    element.classList.add(value);
+}
+
+function removeBgColorById(elementId, value) {
+    const element = document.getElementById(elementId).classList.remove(value)
 }
